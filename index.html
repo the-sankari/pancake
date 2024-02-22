@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-        <div class="logo"><h1>Cake House</h1></div>
+      <div class="logo"><h1>Cake House</h1></div>
       <nav>
         <ul>
           <li>Home</li>
@@ -37,44 +37,73 @@
           <div class="customization-section">
             <p>Select your toppings:</p>
             <div>
-              <input type="checkbox" id="nuts" value="1" />
+              <input
+                type="checkbox"
+                id="nuts"
+                data-name="Nuts"
+                value="1"
+                data-category="toppings"
+              />
               <label for="nuts">Nuts</label>
             </div>
             <div>
-              <input type="checkbox" name="" id="bananas" value="1" />
+              <input
+                type="checkbox"
+                data-name="Bananas"
+                id="bananas"
+                value="1"
+                data-category="toppings"
+              />
               <label for="bananas">Bananas</label>
             </div>
             <div class="">
-              <input type="checkbox" name="" id="syrup" value="1" />
+              <input
+                type="checkbox"
+                data-name="Syrup"
+                id="syrup"
+                value="1"
+                data-category="toppings"
+              />
               <label for="syrup">Syrup</label>
             </div>
           </div>
           <div class="customization-section">
             <p>Add Extras:</p>
             <div class="">
-              <input type="checkbox" name="" id="whippedCream" value="2" />
+              <input
+                type="checkbox"
+                data-name="Whipped Cream"
+                id="whippedCream"
+                value="2"
+                data-category="extras"
+              />
               <label for="whippedCream">Whipped cream - €2</label>
             </div>
             <div class="">
-                <input type="checkbox" name="" id="iceCream" value="3">
-                <label for="iceCream">Ice Cream - €3</label>
+              <input
+                type="checkbox"
+                data-name="Ice Cream"
+                id="iceCream"
+                value="3"
+                data-category="extras"
+              />
+              <label for="iceCream">Ice Cream - €3</label>
             </div>
           </div>
           <div class="customization-section">
             <div class="order-info">
-                <label for="customer-name">You name:</label>
-                <input type="text" name="customer-name" id="customer-name">
+              <label for="customer-name">You name:</label>
+              <input type="text" name="customer-name" id="customer-name" />
             </div>
             <button id="place-order">Place order</button>
           </div>
         </form>
         <div class="order-details">
-            <p>Customer Name: <span id="order-name">Lazy</span></p>
-            <p>Type: <span id="order-type">Classic</span></p>
-            <p>Toppings: <span id="order-toppings">Nuts, Syrup </span></p>
-            <p>Extras: <span id="extras">Ice Cream</span></p>
-            <p>Total Price: <span id="order-total">€15</span></p>
-
+          <p>Customer Name: <span id="order-name">Lazy</span></p>
+          <p>Type: <span id="order-type">Classic</span></p>
+          <p>Toppings: <span id="order-toppings">Nuts, Syrup </span></p>
+          <p>Extras: <span id="extras">Ice Cream</span></p>
+          <p>Total Price: <span id="order-total">€15</span></p>
         </div>
       </div>
     </main>
