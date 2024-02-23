@@ -28,7 +28,8 @@ nav ul li {
   list-style-type: none;
 }
 
-main {
+main,
+.main-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,35 +85,66 @@ main {
   flex: 1;
 }
 
-.order-info{
-    margin: 5px 0;
-    font-size: 18px;
+.order-info {
+  margin: 5px 0;
+  font-size: 18px;
 }
-
-
 
 #customer-name {
   width: 12rem;
   height: 30px;
   font-size: 1.2em;
   border-radius: 5px;
-  border: .2px solid gray;
+  border: 0.2px solid gray;
   margin-bottom: 10px;
 }
 
-#place-order{
-    padding: 8px 40px;
-    border: none;
-    border-radius: 5px;
-    background-color: #d0a93b;
-    font-size: 18px;
-    cursor: pointer;
-    color: #111;
-    font-weight: bold;
+#place-order {
+  padding: 8px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d0a93b;
+  font-size: 18px;
+  cursor: pointer;
+  color: #111;
+  font-weight: bold;
 }
 
-#place-order:hover{
-    background-color: #d0a83bbb;
+#place-order:hover {
+  background-color: #d0a83bbb;
 }
 
+.order-details {
+  position: absolute;
+  background-color: #d0a93b;
+  width: 50%;
+  height: 50%;
+  padding: 25px;
+  /* display: none; */
+}
 
+.display {
+  display: none;
+}
+.customer-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.order-details > p {
+  padding: 14px 10px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px dashed gray;
+}
+
+#greet {
+  text-align: center;
+  display: block;
+  border: none;
+  margin-top: 2%;
+}

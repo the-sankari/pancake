@@ -44,6 +44,7 @@ const checkItems = () => {
 };
 
 const displayOrder = () => {
+  const orderDetails = document.querySelector(".display");
   const customerNameInput = document.querySelector("#customer-name");
   const orderName = document.querySelector("#order-name");
   const orderType = document.querySelector("#order-type");
@@ -55,9 +56,12 @@ const displayOrder = () => {
 
   orderType.textContent = cakeType.options[cakeType.selectedIndex].text;
 
-  orderToppings.textContent = toppings.join(', ');
-  orderExtras.textContent = extras.join(', ');
+  orderToppings.textContent = toppings.join(", ");
+  orderExtras.textContent = extras.join(", ");
+
   orderTotal.textContent = `€${total}`;
+  orderDetails.style.display = "block";
+  document.querySelector(".main-container").style.opacity = 0.5;
 };
 
 form.addEventListener("change", calculatePrice);

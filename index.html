@@ -19,95 +19,107 @@
       </nav>
     </header>
     <main>
-      <div class="img-container">
-        <img src="pancake.jpeg" alt="pancake" width="300" />
-        <div class="price-banner"><span id="totalPrice">€5</span></div>
-      </div>
-      <div class="form-container">
-        <form action="#" class="form-group">
-          <h2>Customize your pancake</h2>
-          <div class="customization-section">
-            <label for="type">Choose your pancake type: </label>
-            <select name="" id="type">
-              <option value="5" data-name="classic">Classic - €5</option>
-              <option value="6" data-name="chocolate">Chocolate - €6</option>
-              <option value="7" data-name="blueberry">Blueberry - €7</option>
-            </select>
-          </div>
-          <div class="customization-section">
-            <p>Select your toppings:</p>
-            <div>
-              <input
-                type="checkbox"
-                id="nuts"
-                data-name="Nuts"
-                value="1"
-                data-category="toppings"
-              />
-              <label for="nuts">Nuts</label>
+      <div class="main-container">
+        <div class="img-container">
+          <img src="pancake.jpeg" alt="pancake" width="300" />
+          <div class="price-banner"><span id="totalPrice">€5</span></div>
+        </div>
+        <div class="form-container">
+          <form action="#" class="form-group">
+            <h2>Customize your pancake</h2>
+            <div class="customization-section">
+              <label for="type">Choose your pancake type: </label>
+              <select name="" id="type">
+                <option value="5" data-name="classic">Classic - €5</option>
+                <option value="6" data-name="chocolate">Chocolate - €6</option>
+                <option value="7" data-name="blueberry">Blueberry - €7</option>
+              </select>
             </div>
-            <div>
-              <input
-                type="checkbox"
-                data-name="Bananas"
-                id="bananas"
-                value="1"
-                data-category="toppings"
-              />
-              <label for="bananas">Bananas</label>
+            <div class="customization-section">
+              <p>Select your toppings:</p>
+              <div>
+                <input
+                  type="checkbox"
+                  id="nuts"
+                  data-name="Nuts"
+                  value="1"
+                  data-category="toppings"
+                />
+                <label for="nuts">Nuts</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  data-name="Bananas"
+                  id="bananas"
+                  value="1"
+                  data-category="toppings"
+                />
+                <label for="bananas">Bananas</label>
+              </div>
+              <div class="">
+                <input
+                  type="checkbox"
+                  data-name="Syrup"
+                  id="syrup"
+                  value="1"
+                  data-category="toppings"
+                />
+                <label for="syrup">Syrup</label>
+              </div>
             </div>
-            <div class="">
-              <input
-                type="checkbox"
-                data-name="Syrup"
-                id="syrup"
-                value="1"
-                data-category="toppings"
-              />
-              <label for="syrup">Syrup</label>
+            <div class="customization-section">
+              <p>Add Extras:</p>
+              <div class="">
+                <input
+                  type="checkbox"
+                  data-name="Whipped Cream"
+                  id="whippedCream"
+                  value="2"
+                  data-category="extras"
+                />
+                <label for="whippedCream">Whipped cream - €2</label>
+              </div>
+              <div class="">
+                <input
+                  type="checkbox"
+                  data-name="Ice Cream"
+                  id="iceCream"
+                  value="3"
+                  data-category="extras"
+                />
+                <label for="iceCream">Ice Cream - €3</label>
+              </div>
             </div>
-          </div>
-          <div class="customization-section">
-            <p>Add Extras:</p>
-            <div class="">
-              <input
-                type="checkbox"
-                data-name="Whipped Cream"
-                id="whippedCream"
-                value="2"
-                data-category="extras"
-              />
-              <label for="whippedCream">Whipped cream - €2</label>
+            <div class="customization-section">
+              <div class="order-info">
+                <label for="customer-name">You name:</label>
+                <input type="text" name="customer-name" id="customer-name" />
+              </div>
+              <button id="place-order">Place order</button>
             </div>
-            <div class="">
-              <input
-                type="checkbox"
-                data-name="Ice Cream"
-                id="iceCream"
-                value="3"
-                data-category="extras"
-              />
-              <label for="iceCream">Ice Cream - €3</label>
-            </div>
-          </div>
-          <div class="customization-section">
-            <div class="order-info">
-              <label for="customer-name">You name:</label>
-              <input type="text" name="customer-name" id="customer-name" />
-            </div>
-            <button id="place-order">Place order</button>
-          </div>
-        </form>
-        <div class="order-details">
-          <p>Customer Name: <span id="order-name">Lazy</span></p>
-          <p>Type: <span id="order-type">Classic</span></p>
-          <p>Toppings: <span id="order-toppings">Nuts, Syrup </span></p>
-          <p>Extras: <span id="extras">Ice Cream</span></p>
-          <p>Total Price: <span id="order-total">€15</span></p>
+          </form>
         </div>
       </div>
-    </main>
 
+      <div class="order-details display">
+        <div class="customer-info">
+          <p>Order Id: #587</p>
+          <p>Hello! <span id="order-name">Lazy</span></p>
+        </div>
+        <p>Type: <span id="order-type">Classic</span><span>€5</span></p>
+        <p>
+          Toppings: <span id="order-toppings">Nuts, Syrup </span><span>€1</span>
+        </p>
+        <p>Extras:<span id="order-extras">Ice Cream</span><span>€2</span></p>
+        <p>
+          Total Price:
+          <span></span>
+          <span id="order-total">€15</span>
+        </p>
+        <p id="greet">Have a Nice Meal! Thank you!!!</p>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
